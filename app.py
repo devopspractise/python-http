@@ -11,7 +11,7 @@ class MyHandler(BaseHTTPRequestHandler):
     self.send_response(200)
     self.send_header('Content-type','image/png')
     self.end_headers()
-    print("This is a sample Python Website")
+    print('This is a sample Python Website')
     with open('logo.png', 'rb') as f:
       self.wfile.write(f.read())
 
